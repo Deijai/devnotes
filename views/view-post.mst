@@ -1,0 +1,15 @@
+{{> header}}
+
+<h1>{{post.titulo}}</h1>
+<article>
+<b>{{post.corpo}}</b>
+</article>
+
+<article>
+    <img src="/media/{{post.photo}}"/>
+</article>
+
+<hr>
+<small>{{post.tags}}</small>
+
+</body>

@@ -1,0 +1,32 @@
+{{> header}}
+<h1>Seja Bem vindo</h1>
+
+<p>Usuario logado: {{userName.name}}</p>
+
+<h2>Dados:</h2>
+
+
+{{#mostrar}}
+
+<p>Nome: {{nome}}</p>
+<p>Idade: {{idade}}</p>
+<p>Profissao: {{profissao}}</p>
+
+{{/mostrar}}
+
+
+<hr/>
+<h3>Produtos</h3>
+<ul>
+{{#ingredientes}}
+    <li>Produto: {{nome}} QT: {{qt}}</li>
+{{/ingredientes}}
+</ul>
+
+<hr/>
+<h3>Tecnologias de interesse</h3>
+<ul>
+{{#interesses}}
+    <li>Tecnologia: {{.}}</li>
+{{/interesses}}
+</ul>

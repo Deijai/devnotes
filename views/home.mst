@@ -1,0 +1,19 @@
+{{> header}}
+
+{{#tags}}
+    <a class="{{class}}" href="/?t={{_id}}"> {{_id}} ({{count}}) </a> <br/> 
+{{/tags}}
+
+{{#posts}}
+    <h3><a href="/post/{{slug}}">{{titulo}}</a></h3>
+    Autor: <small>{{author.name}}</small>
+    <p>{{corpo}}</p>
+    <code>Tags: {{tags}}</code>
+
+{{#user}}
+    <a href="post/{{slug}}/edit">[ Editar ]</a>
+{{/user}}
+    <hr>
+{{/posts}}
+
+
